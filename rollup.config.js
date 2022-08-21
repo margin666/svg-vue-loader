@@ -1,7 +1,7 @@
-const {resolve} = require('path')
+// const {resolve} = require('path')
 import {terser} from 'rollup-plugin-terser'
 export default {
-    input: resolve(__dirname, 'packages', 'svg-vue-loader.js'),
+    input: './packages/svg-vue-loader.js',
     output: [
         {
             file: './dist/svg-vue-loader.js',
@@ -9,6 +9,6 @@ export default {
         },
     ],
     plugins: [
-        terser()
+        terser(),
     ]
 }
